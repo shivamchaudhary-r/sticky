@@ -1,0 +1,186 @@
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+*:focus {
+  outline: none;
+}
+
+#main {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+}
+
+.sticky {
+  font: 20px "Short Stack", "Gloria Hallelujah", cursive;
+  line-height: 1.5;
+  border: 0;
+  border-radius: 4px;
+  background: linear-gradient(rgb(255, 240, 140), rgb(255, 243, 163));
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 270px;
+  min-height: 250px;
+  margin: 30px;
+  transition: 0.3s;
+  float: left;
+  display: none;
+  vertical-align: top;
+}
+
+.sticky:hover {
+  transform: scale(1);
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.15);
+}
+
+.sticky-content::-webkit-scrollbar {
+  width: 10px;
+}
+
+.sticky-content::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.sticky-content::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.sticky-content::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.sticky:nth-child(even) {
+  transform: rotate(2deg);
+}
+
+.sticky:nth-child(odd) {
+  transform: rotate(-1.5deg);
+}
+
+.sticky-header {
+  height: 30px;
+  width: inherit;
+  background: rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  overflow: hidden;
+}
+
+.sticky-header-menu {
+  font-weight: bold;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  display: block;
+  width: 50px;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.sticky-header-menu:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.sticky-content {
+  padding: 10px 10px 0 10px;
+  overflow-y: auto;
+  width: 270px;
+  min-height: 250px;
+  box-sizing: border-box;
+  border: 0;
+  resize: vertical;
+  background-color: transparent;
+  display: block;
+  cursor: default;
+}
+
+.sticky-content:focus {
+  outline: none;
+}
+
+#createStickyBtn {
+  float: left;
+  display: none;
+  padding: 25px 25px 40px;
+  margin: 30px;
+  width: 270px;
+  height: 270px;
+  user-select: none;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  border: 15px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.1);
+  font: 220px "Helvetica", sans-serif;
+  line-height: 185px;
+  box-sizing: border-box;
+  vertical-align: top;
+}
+
+#createStickyBtn:hover {
+  border-color: rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content-hide {
+  display: none;
+  position: absolute;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  top: 30px;
+  left: 0;
+  width: 270px;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+.dropdown-content-show {
+  top: 30px;
+  left: 0;
+}
+
+.dropdown-content-hide div {
+  padding: 14px 14px;
+  flex: 1;
+}
+
+.pink-color {
+  background: linear-gradient(rgb(255, 170, 210), rgb(255, 100, 173));
+}
+
+.blue-color {
+  background: linear-gradient(rgb(130, 220, 255), rgb(164, 229, 255));
+}
+
+.green-color {
+  background: linear-gradient(rgb(155, 255, 151), rgb(137, 255, 133));
+}
+
+.yellow-color {
+  background: linear-gradient(rgb(255, 240, 140), rgb(255, 243, 163));
+}
+
+.red-color {
+  background: linear-gradient(rgb(255, 55, 55), rgb(184, 42, 42));
+}
+
+.drop-button {
+  margin-left: auto;
+}
+
+.notSaved {
+  display: none;
+}
+
+.notSaved:hover {
+  background-color: transparent;
+  cursor: auto;
+}
+
